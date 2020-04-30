@@ -21,6 +21,30 @@
   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
 
     <body>
+         <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#"><i>STS</i></a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon" style="color: black;"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item mx-5">
+                  <a class="nav-link" href="#abstract">Abstract</a>
+                </li>
+                <li class="nav-item mx-5">
+                  <a class="nav-link" href="#projectby">Project By</a>
+                </li>
+                <li class="nav-item mx-5">
+                  <a class="nav-link" href="#projectguide">Project Guide</a>
+                </li>
+              </ul>
+            </div>
+          </nav> 
+
         <div class="container mycontainer">
             <div class="header jumbotron my-5 p-2 shadow">
                 <div class="col p-1 d-flex justify-content-center">
@@ -40,7 +64,7 @@
             </div>
             <div class="row mx-4 my-5 d-flex justify-content-center">
                 <div class="col-12 mt-5">
-                    <h1>Speech to Sketch</h1>
+                    <h1 id="abstract">Speech to Sketch</h1>
                 </div>
                 <div class="col-12 mt-5">
                     <h3>Abstract</h3>
@@ -64,7 +88,7 @@
                     </p>
                 </div>
                 <div class="col-12 m-5">
-                    <h2>Project By</h2>
+                    <h2 id="projectby">Project By</h2>
                 </div>
                 <div class="row m-5">
                     <div class="col">
@@ -106,7 +130,7 @@
                 </div>
             </div>
             <div class="row m-5">
-                <div class="col-12 my-5">
+                <div class="col-12 my-5" id="projectguide">
                     <h1>Guided By</h1>
                 </div>
                 <div class="col-12 my-3">
