@@ -1,0 +1,134 @@
+<?php Header("Cache-Control: max-age=3000, must-revalidate"); ?>
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <title>SPEECH INPUT</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+    </head>
+	<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <body>
+        <div class="container mycontainer">
+            <div class="header jumbotron my-5 p-2 shadow">
+                <div class="col p-1 d-flex justify-content-center">
+                    <h1 class="display-1">SPEECH TO SKETCH</h1>
+                </div>
+            </div>
+            <div class="mywebapp"> 
+                <div class="input row m-5 pt-5 d-flex justify-content-center">
+                    <textarea id="textbox" rows="1" cols="28" class="" placeholder="Your Voice Input Will get Displayed Here"></textarea>
+                </div>  
+                <div class="row d-flex m-4 justify-content-center">       
+                    <button id="start-btn" class="btn micbutton btn-primary px-5 py-3 shadow" title="Start"><i class="fas fa-microphone" style="font-size: 40px;"></i></button>
+                </div>
+                <div class="row d-flex m-4 justify-content-center">       
+                    <p id="instructions" class="display-4 pb-5">Click the Mic to start Recording</p>
+                </div>
+            </div>
+            <div class="row mx-4 my-5 d-flex justify-content-center">
+                <div class="col-12 mt-5">
+                    <h1>Speech to Sketch</h1>
+                </div>
+                <div class="col-12 mt-5">
+                    <h3>Abstract</h3>
+                    <p>Language and images are closely intertwined: We think in pictures and we explain facts as
+                    spatial constellations. A picture is worth a thousand words, but sometimes thousand words are
+                    also not enough when the opposite person is unable to understand us properly. A lot of times
+                    only words and sentences are not enough to explain something to physically challenged or to
+                    small kids. At everyone’s childhood, grandparents or may be parents tells the stories to kids.
+                    After telling something most of time words are difficult to visualize for kids. Images can be
+                    better understood by human brain. What if the spoken word could be transformed into dynamic
+                    visual worlds in real time? Speech input, machine learning and recurrent neural networks for
+                    image generation allow to computer generate complex imaginary worlds that follow the narrator
+                    and thus create complex animations controlled by linguistic structures. Hence we have proposed
+                    and working on a system which will help mentally disable people or physically challenged
+                    people like deaf and also will enable kids to understand the context more easily by helping them
+                    to visualize the sentences in the form of animation of sketches.
+                    <br>
+                    Technical Keywords: Artificial Intelligence, Speech Recognition, Natural Language Processing,
+                    Deep Learning, Gesture, Image Processing, Machine Learning, Object Recognition, Neural
+                    Networks.
+                    </p>
+                </div>
+                <div class="col-12 m-5">
+                    <h2>Project By</h2>
+                </div>
+                <div class="row m-5">
+                    <div class="col">
+                        <div class="card">
+                            <img src="profile/aadesh4.jpg" alt="Aadesh Nirfarake" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Aadesh Nirfarake</h5>
+                                <p class="card-text">Roll No. 3162072</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="profile/rushidengle.jpg" alt="Rushikesh Dengle" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Rushikesh Dengle</h5>
+                                <p class="card-text">Roll No. 3162072</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="profile/pratikpawar.jpg" alt="Pratik Pawar" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Pratik Pawar</h5>
+                                <p class="card-text">Roll No. 3162072</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="profile/rushilandge1.jpg" alt="Rushikesh Landge" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Rushikesh Landge</h5>
+                                <p class="card-text">Roll No. 3162072</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row footer bg-light my-5 px-xl-0 p-2">
+                <div class="col-12 px-2 d-flex justify-content-end">
+                    <address class="p-2">
+                        <h3>MIT COLLEGE OF ENGINEERING</h3>
+                        <h5> Survey No. 124, Paud Rd, Kothrud</h5> 
+                        <h5> Pune, Maharashtra</h5>
+                        <h5> 411038</h5>
+                        <a href="https://mitwpu.edu.in/" class="btn btn-outline-primary">MIT Pune</a>
+                    </address><br>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="script.js"></script>
+	
+    </body>
+</html>

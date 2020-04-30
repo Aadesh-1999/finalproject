@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+.header{
+	transition: 2s;
+	width: 100%;
+
+}
+.header:hover{
+	transform: scale(1.05);
+}
+.micbutton{
+	transition: 0.5s;
+	border-radius: 50px;
+}
+.micbutton:hover{
+	transform: scale(1.05);
+	border-radius: 20px;
+}
+/*@media screen and (max-width: 600px) {
+	.display-1{
+		font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","sans-serif","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+		font-size:12px; 
+	}
+}*/
