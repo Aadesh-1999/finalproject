@@ -13,11 +13,11 @@ canvas {
 .header:hover{
 	transform: scale(1.05);
 }
-.micbutton{
+.micbutton,.btn{
 	transition: 0.5s;
 	border-radius: 50px;
 }
-.micbutton:hover{
+.micbutton:hover,.btn:hover{
 	transform: scale(1.05);
 	border-radius: 20px;
 }
