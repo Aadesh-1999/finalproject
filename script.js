@@ -20,7 +20,7 @@ recognition.onresult = function(event) {
 	//draw();
 	//var queryString="?para1=" +Content;
 	localStorage.setItem('str',Content);
-	window.location.replace("index.html");
+	window.location.replace("index_mic.html");
 	
 	
 
